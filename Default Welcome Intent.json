@@ -1,0 +1,43 @@
+{
+  "id": "3917a060-ec94-47aa-8912-4f2cdd2badb8",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "telegram",
+          "speech": "You can ask 'Tell me a joke', 'Get me a fact about Chuck', 'Tell me about Chuck' or 'Get me a new one'"
+        },
+        {
+          "type": 3,
+          "platform": "telegram",
+          "imageUrl": "https://assets.chucknorris.host/img/chucknorris_logo_coloured_small@2x.png",
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "speech": "Hello! I am a Joke bot."
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [],
+  "followUpIntents": [],
+  "templates": []
+}

@@ -18,7 +18,7 @@
           "prompts": [
             "Please tell me a name"
           ],
-          "isList": false
+          "isList": true
         }
       ],
       "messages": [
@@ -37,13 +37,13 @@
     "target": ""
   },
   "webhookUsed": true,
-  "webhookForSlotFilling": true,
+  "webhookForSlotFilling": false,
   "lastUpdate": 1510485299739,
   "fallbackIntent": false,
   "events": [],
   "userSays": [
     {
-      "id": "59e42759-adaa-47fd-8c26-68a3cfb6700b",
+      "id": "f845d7c9-1701-48e9-b6c5-20c88d2e11a4",
       "data": [
         {
           "text": "get a new one"
@@ -54,7 +54,7 @@
       "isAuto": false
     },
     {
-      "id": "013454a8-b478-4c23-ae6d-aba002cdcf88",
+      "id": "bb560730-cab4-49a4-a5f1-1407e00a7d99",
       "data": [
         {
           "text": "get me a joke"
@@ -65,7 +65,7 @@
       "isAuto": false
     },
     {
-      "id": "cb912eeb-7b38-4fa8-8647-056073484068",
+      "id": "92e9fc1e-75c9-4e7d-aca0-9e5b7e21ccd1",
       "data": [
         {
           "text": "tell me a joke"
@@ -77,7 +77,7 @@
       "isAuto": false
     },
     {
-      "id": "df5cd346-96eb-46ab-b921-c52297d7ac27",
+      "id": "729fb71f-e333-4ccf-b777-a8e461737dc1",
       "data": [
         {
           "text": "tell me about "
@@ -95,7 +95,7 @@
       "isAuto": false
     },
     {
-      "id": "456ea000-90e9-47f0-bac4-ce7e11bf1c84",
+      "id": "971b145b-7415-47e9-8eee-7ef8da26b8bb",
       "data": [
         {
           "text": "get me a joke about "
@@ -113,7 +113,7 @@
       "isAuto": false
     },
     {
-      "id": "575dadec-ba6c-4eec-a1c4-6f1dab7ba493",
+      "id": "2eadd3f2-de1e-4371-a00d-7535a128ba53",
       "data": [
         {
           "text": "get me a fact about "
