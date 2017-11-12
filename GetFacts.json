@@ -1,0 +1,136 @@
+{
+  "id": "6d946be4-50f8-4df5-a8c0-5416f27cb1a9",
+  "name": "GetFacts",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "interest",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "a0c35bf1-658d-4bf9-8411-0f937931ac73",
+          "required": true,
+          "dataType": "@person",
+          "name": "person",
+          "value": "$person.original",
+          "prompts": [
+            "Please tell me a name"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "lastUpdate": 1510485299739,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "59e42759-adaa-47fd-8c26-68a3cfb6700b",
+      "data": [
+        {
+          "text": "get a new one"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "013454a8-b478-4c23-ae6d-aba002cdcf88",
+      "data": [
+        {
+          "text": "get me a joke"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cb912eeb-7b38-4fa8-8647-056073484068",
+      "data": [
+        {
+          "text": "tell me a joke"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1510485299,
+      "isAuto": false
+    },
+    {
+      "id": "df5cd346-96eb-46ab-b921-c52297d7ac27",
+      "data": [
+        {
+          "text": "tell me about "
+        },
+        {
+          "text": "Chuck",
+          "alias": "person",
+          "meta": "@person",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1510485299,
+      "isAuto": false
+    },
+    {
+      "id": "456ea000-90e9-47f0-bac4-ce7e11bf1c84",
+      "data": [
+        {
+          "text": "get me a joke about "
+        },
+        {
+          "text": "Chuck",
+          "alias": "person",
+          "meta": "@person",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1510485299,
+      "isAuto": false
+    },
+    {
+      "id": "575dadec-ba6c-4eec-a1c4-6f1dab7ba493",
+      "data": [
+        {
+          "text": "get me a fact about "
+        },
+        {
+          "text": "Chuck",
+          "alias": "person",
+          "meta": "@person",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1510485299,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import make_response
+import urllib
 import json
 import logging as l
 import requests
@@ -21,16 +22,16 @@ def apiai_response():
     req = request.get_json(silent=True, force=True)
     person = req["result"]["parameters"]["person"]
 
-    if person == "":
-        speech = "Chuck Norris only!"
-    else:
-        try:
-            r = requests.get('https://api.chucknorris.io/jokes/random')
-            data = json.dumps(r.json())
-            result = json.loads(data)['value']
+    try:
+        r = requests.get('https://api.chucknorris.io/jokes/random')
+        data = json.dumps(r.json())
+        result = json.loads(data)['value']
+        if person == "":
+            speech = "Chuck only! \n" + result
+        else:
             speech = result
-        except:
-            speech = "Chuck Norris hides. Internet is down"
+    except:
+        speech = "Chuck hides. Internet is down"
 
     my_response = {
         "speech": speech,
